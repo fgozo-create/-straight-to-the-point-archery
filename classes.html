@@ -1,107 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Classes | Straight to the Point Archery</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Classes - Straight to the Point Archery</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+    });
+</script>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container header-container">
-      <div class="logo">
-        <img src="images/logo.png" alt="Straight to the Point Archery Logo" />
-        <span>Straight to the Point Archery</span>
-      </div>
+   <header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Straight to the Point Archery Logo">
+        </div>
 
-      <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="index.html#instructors">Instructors</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="classes.html"><i class="fas fa-bullseye"></i> Classes</a></li>
+                <li><a href="instructors.html"><i class="fas fa-user"></i> Instructors</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <!-- MAIN CONTENT -->
-  <main class="section">
+    <main class="container">
 
-    <div class="container">
-      <h2>Our Classes</h2>
-      <p>
-        Explore our range of archery classes designed for beginners,
-        intermediate learners, and advanced archers.
-      </p>
+        <section class="page-title section">
+            <h1>Our Classes</h1>
+            <p>
+                Explore our training programs designed for all skill levels.
+                Choose the class that best fits your experience and goals.
+            </p>
+            <p>
+                Not sure where to start? Beginners are encouraged to enroll in our
+                Beginner Archery class before progressing to higher levels.
+            </p>
+        </section>
 
-      <!-- CLASSES SECTION -->
-      <section class="card-container">
+        <section class="classes section">
 
-        <!-- CLASS 1 -->
-        <article class="card">
-          <h3>A101 Basic Archery</h3>
-          <p>
-            This beginner-level course focuses on archery safety, proper form,
-            and basic shooting techniques. Fun activities are included to help
-            build confidence and skill.
-          </p>
+            <article class="class-card">
+                <h2>Beginner Archery</h2>
+                <p>
+                    This class is perfect for those new to archery. Learn the basics
+                    including safety, proper stance, aiming, and shooting techniques.
+                </p>
 
-          <ul>
-            <li><strong>Schedule:</strong> Mondays & Wednesdays (4–5 PM)</li>
-            <li><strong>Cost:</strong> $120/month</li>
-            <li><strong>Prerequisite:</strong> None (Minimum age 8)</li>
-          </ul>
-        </article>
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Schedule:</strong> Monday & Wednesday (9:00 AM - 11:00 AM)</li>
+                    <li><strong>Cost:</strong> ₱1,500 per session</li>
+                    <li><strong>Prerequisites:</strong> None</li>
+                </ul>
+            </article>
 
-        <!-- CLASS 2 -->
-        <article class="card">
-          <h3>A102 Intermediate Archery</h3>
-          <p>
-            This course builds on fundamental skills and introduces new equipment
-            such as recurve and compound bows. Focus is placed on improving form
-            and consistency.
-          </p>
+            <article class="class-card">
+                <h2>Intermediate Training</h2>
+                <p>
+                    Designed for students with basic knowledge of archery. Improve
+                    your accuracy, consistency, and shooting techniques.
+                </p>
 
-          <ul>
-            <li><strong>Schedule:</strong> Tuesdays & Thursdays (4–5 PM)</li>
-            <li><strong>Cost:</strong> $120/month</li>
-            <li><strong>Prerequisite:</strong> A101 or instructor approval</li>
-          </ul>
-        </article>
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Schedule:</strong> Tuesday & Thursday (1:00 PM - 3:00 PM)</li>
+                    <li><strong>Cost:</strong> ₱2,000 per session</li>
+                    <li><strong>Prerequisites:</strong> Basic archery knowledge</li>
+                </ul>
+            </article>
 
-        <!-- CLASS 3 -->
-        <article class="card">
-          <h3>A103 Advanced Archery</h3>
-          <p>
-            Designed for experienced students, this course focuses on
-            tournament-style shooting and advanced techniques. Students receive
-            personalized guidance to refine their performance.
-          </p>
+            <article class="class-card">
+                <h2>Advanced Coaching</h2>
+                <p>
+                    This program is for experienced archers who want to refine their
+                    skills and prepare for competitions.
+                </p>
 
-          <ul>
-            <li><strong>Schedule:</strong> Tuesdays & Thursdays (5–6 PM)</li>
-            <li><strong>Cost:</strong> $120/month</li>
-            <li><strong>Prerequisite:</strong> A101 & A102 or equivalent</li>
-          </ul>
-        </article>
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Schedule:</strong> Saturday (9:00 AM - 12:00 PM)</li>
+                    <li><strong>Cost:</strong> ₱2,500 per session</li>
+                    <li><strong>Prerequisites:</strong> Intermediate level skills</li>
+                </ul>
+            </article>
 
-      </section>
+        </section>
 
-    </div>
+    </main>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Straight to the Point Archery</p>
-    </div>
-  </footer>
+    <footer>
+         <figure>
+        <img src="images/footer-logo.png" alt="Straight to the Point Archery logo">
+        <figcaption>Train with precision and confidence</figcaption>
+    </figure>
+        <p>&copy; 2026 Straight to the Point Archery. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
