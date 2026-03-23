@@ -6,32 +6,53 @@
     
     <title>Contact Us - Straight to the Point Archery</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+    });
+</script>
 <body>
 
     <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Straight to the Point Archery Logo" width="120">
-        </div>
+    <div class="logo">
+           <figure>
+                    <img src="images/logo.png" alt="Straight to the Point Archery logo">
+                    <figcaption>Official logo of Straight to the Point Archery</figcaption>
+            </figure>
+    </div>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
 
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="classes.html"><i class="fas fa-bullseye"></i> Classes</a></li>
+                <li><a href="instructors.html"><i class="fas fa-user"></i> Instructors</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
     <!-- Main Content -->
-    <main>
+    <main class="container">
 
-        <!-- Page Title -->
-        <section class="contact-intro">
+        <!-- Contact Intro -->
+        <section class="contact-intro section">
             <h1>Contact Us</h1>
             <p>
                 Have questions or want to enroll? Get in touch with us using the
@@ -39,34 +60,52 @@
             </p>
         </section>
 
-        <!-- Contact Information -->
-        <section class="contact-details">
+        <!-- Contact Details -->
+        <section class="contact-details section">
             <h2>Our Contact Information</h2>
 
             <address>
-                <p><strong>Phone:</strong> +63 912 345 6789</p>
-                <p><strong>Email:</strong> info@archerycenter.com</p>
-                <p><strong>Address:</strong> Imus, Cavite, Philippines</p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+639123456789">+63 912 345 6789</a>
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@archerycenter.com">info@archerycenter.com</a>
+                </p>
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Imus, Cavite, Philippines
+                </p>
             </address>
+            <p>We respond to inquiries within 24 hours.</p>
         </section>
 
-        <!-- Map Section (Optional) -->
-        <section class="map">
+        <!-- Map -->
+        <section class="map section">
             <h2>Find Us</h2>
-            <iframe 
-                src="https://www.google.com/maps?q=Imus%20Cavite&output=embed"
-                width="100%" 
-                height="300" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
+            <figure>
+                <iframe
+                    src="https://www.google.com/maps?q=Imus%20Cavite&output=embed"
+                    width="100%"
+                    height="300"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+                <figcaption>Map showing the location of Straight to the Point Archery in Imus, Cavite</figcaption>
+            </figure>
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer>
+         <figure>
+        <img src="images/footer-logo.png" alt="Straight to the Point Archery logo">
+        <figcaption>Train with precision and confidence</figcaption>
+    </figure>
         <p>&copy; 2026 Straight to the Point Archery. All rights reserved.</p>
     </footer>
 

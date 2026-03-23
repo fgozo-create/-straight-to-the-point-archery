@@ -3,30 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instructors</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Instructors - Straight to the Point Archery</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>Meet Our Instructors</h1>
-        <nav>
-            <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <figure>
+                    <img src="images/logo.png" alt="Straight to the Point Archery logo">
+                    <figcaption>Official logo of Straight to the Point Archery</figcaption>
+                </figure>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="classes.html"><i class="fas fa-bullseye"></i> Classes</a></li>
+                    <li><a href="instructors.html"><i class="fas fa-user"></i> Instructors</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="instructors">
+    <main class="container">
+        <section class="instructors section">
+            <h1>Meet Our Instructors</h1>
 
-            <!-- Instructor 1 -->
             <article class="instructor-card">
-                <img src="images/instructor1.png" alt="John Smith teaching archery">
+                <figure>
+                    <img src="images/instructor1.png" alt="John Smith teaching beginner archery techniques" class="instructor-photo">
+                    <figcaption>John Smith - Certified beginner archery instructor</figcaption>
+                </figure>
                 <h2>John Smith</h2>
                 <p>
                     John is a certified archery coach with over 10 years of experience.
@@ -35,9 +52,11 @@
                 </p>
             </article>
 
-            <!-- Instructor 2 -->
             <article class="instructor-card">
-                <img src="images/instructor2.png" alt="Maria Lopez professional archer">
+                <figure>
+                    <img src="images/instructor2.png" alt="Maria Lopez coaching students in accuracy and competition strategy" class="instructor-photo">
+                    <figcaption>Maria Lopez - Intermediate archery instructor</figcaption>
+                </figure>
                 <h2>Maria Lopez</h2>
                 <p>
                     Maria is a competitive archer who has represented her region in
@@ -46,9 +65,11 @@
                 </p>
             </article>
 
-            <!-- Instructor 3 -->
             <article class="instructor-card">
-                <img src="images/instructor3.png" alt="David Lee advanced archery instructor">
+                <figure>
+                    <img src="images/instructor3.png" alt="David Lee demonstrating advanced precision shooting techniques" class="instructor-photo">
+                    <figcaption>David Lee - Advanced coaching specialist</figcaption>
+                </figure>
                 <h2>David Lee</h2>
                 <p>
                     David is an advanced instructor focusing on precision shooting and
@@ -56,14 +77,25 @@
                     prepare for high-level competitions.
                 </p>
             </article>
-
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Archery Training Center. All rights reserved.</p>
+         <figure>
+        <img src="images/footer-logo.png" alt="Straight to the Point Archery logo">
+        <figcaption>Train with precision and confidence</figcaption>
+    </figure>
+        <p>&copy; 2026 Straight to the Point Archery. All rights reserved.</p>
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('show');
+        });
+    </script>
 
 </body>
 </html>

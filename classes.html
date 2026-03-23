@@ -6,43 +6,59 @@
     
     <title>Classes - Straight to the Point Archery</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+    });
+</script>
 <body>
 
-    <!-- Header -->
-    <header>
+   <header>
+    <div class="header-container">
         <div class="logo">
-            <img src="images/logo.png" alt="Straight to the Point Archery Logo" width="120">
+            <img src="images/logo.png" alt="Straight to the Point Archery Logo">
         </div>
 
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="classes.html"><i class="fas fa-bullseye"></i> Classes</a></li>
+                <li><a href="instructors.html"><i class="fas fa-user"></i> Instructors</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <!-- Main Content -->
-    <main>
+    <main class="container">
 
-        <!-- Page Title -->
-        <section class="page-title">
+        <section class="page-title section">
             <h1>Our Classes</h1>
             <p>
                 Explore our training programs designed for all skill levels.
                 Choose the class that best fits your experience and goals.
             </p>
+            <p>
+                Not sure where to start? Beginners are encouraged to enroll in our
+                Beginner Archery class before progressing to higher levels.
+            </p>
         </section>
 
-        <!-- Classes Section -->
-        <section class="classes">
+        <section class="classes section">
 
-            <!-- Class 1 -->
             <article class="class-card">
                 <h2>Beginner Archery</h2>
                 <p>
@@ -50,7 +66,7 @@
                     including safety, proper stance, aiming, and shooting techniques.
                 </p>
 
-                <h3>Details:</h3>
+                <h3>Details</h3>
                 <ul>
                     <li><strong>Schedule:</strong> Monday & Wednesday (9:00 AM - 11:00 AM)</li>
                     <li><strong>Cost:</strong> ₱1,500 per session</li>
@@ -58,7 +74,6 @@
                 </ul>
             </article>
 
-            <!-- Class 2 -->
             <article class="class-card">
                 <h2>Intermediate Training</h2>
                 <p>
@@ -66,7 +81,7 @@
                     your accuracy, consistency, and shooting techniques.
                 </p>
 
-                <h3>Details:</h3>
+                <h3>Details</h3>
                 <ul>
                     <li><strong>Schedule:</strong> Tuesday & Thursday (1:00 PM - 3:00 PM)</li>
                     <li><strong>Cost:</strong> ₱2,000 per session</li>
@@ -74,7 +89,6 @@
                 </ul>
             </article>
 
-            <!-- Class 3 -->
             <article class="class-card">
                 <h2>Advanced Coaching</h2>
                 <p>
@@ -82,7 +96,7 @@
                     skills and prepare for competitions.
                 </p>
 
-                <h3>Details:</h3>
+                <h3>Details</h3>
                 <ul>
                     <li><strong>Schedule:</strong> Saturday (9:00 AM - 12:00 PM)</li>
                     <li><strong>Cost:</strong> ₱2,500 per session</li>
@@ -94,8 +108,11 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
+         <figure>
+        <img src="images/footer-logo.png" alt="Straight to the Point Archery logo">
+        <figcaption>Train with precision and confidence</figcaption>
+    </figure>
         <p>&copy; 2026 Straight to the Point Archery. All rights reserved.</p>
     </footer>
 

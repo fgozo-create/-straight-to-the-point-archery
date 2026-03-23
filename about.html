@@ -6,32 +6,53 @@
     
     <title>About Us - Straight to the Point Archery</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+    });
+</script>
 <body>
 
     <!-- Header -->
     <header>
+    <div class="header-container">
         <div class="logo">
-            <img src="images/logo.png" alt="Straight to the Point Archery Logo" width="120">
+           <figure>
+                    <img src="images/logo.png" alt="Straight to the Point Archery logo">
+                    <figcaption>Official logo of Straight to the Point Archery</figcaption>
+            </figure>
         </div>
 
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="classes.html"><i class="fas fa-bullseye"></i> Classes</a></li>
+                <li><a href="instructors.html"><i class="fas fa-user"></i> Instructors</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
     <!-- Main Content -->
-    <main>
+    <main class="container">
 
-        <!-- Page Introduction -->
-        <section class="about-intro">
+        <section class="about-intro section">
             <h1>About Straight to the Point Archery</h1>
             <p>
                 Straight to the Point Archery is dedicated to providing high-quality
@@ -41,8 +62,7 @@
             </p>
         </section>
 
-        <!-- Mission Section -->
-        <section class="mission">
+        <section class="mission section">
             <h2>Our Mission</h2>
             <p>
                 Our mission is to promote the sport of archery by offering accessible,
@@ -51,8 +71,7 @@
             </p>
         </section>
 
-        <!-- History Section -->
-        <section class="history">
+        <section class="history section">
             <h2>Our History</h2>
             <p>
                 Founded with a passion for precision sports, Straight to the Point
@@ -62,16 +81,16 @@
             </p>
         </section>
 
-        <section>
-        <h2>Our Commitment</h2>
+        <!-- FIXED: added class -->
+        <section class="commitment section">
+            <h2>Our Commitment</h2>
             <p>
                 We are committed to building a supportive community where students feel
                 safe, respected, and motivated to grow in the sport of archery.
-             </p>
+            </p>
         </section>
 
-        <!-- Facilities Section -->
-        <section class="facilities">
+        <section class="facilities section">
             <h2>Our Facilities</h2>
             <ul>
                 <li>Safe and well-maintained archery range</li>
@@ -81,8 +100,7 @@
             </ul>
         </section>
 
-        <!-- Policies Section -->
-        <section class="policies">
+        <section class="policies section">
             <h2>Our Policies</h2>
             <ul>
                 <li>All students must follow safety guidelines at all times</li>
@@ -96,6 +114,10 @@
 
     <!-- Footer -->
     <footer>
+         <figure>
+        <img src="images/footer-logo.png" alt="Straight to the Point Archery logo">
+        <figcaption>Train with precision and confidence</figcaption>
+    </figure>
         <p>&copy; 2026 Straight to the Point Archery. All rights reserved.</p>
     </footer>
 

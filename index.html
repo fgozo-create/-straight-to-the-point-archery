@@ -4,85 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Straight to the Point Archery</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+    });
+</script>
 <body>
 
     <header>
+    <div class="header-container">
         <div class="logo">
-            <img src="images/logo.png" alt="Straight to the Point Archery Logo" width="120">
+           <figure>
+                    <img src="images/logo.png" alt="Straight to the Point Archery logo">
+                    <figcaption>Official logo of Straight to the Point Archery</figcaption>
+            </figure>
         </div>
 
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="classes.html"><i class="fas fa-bullseye"></i> Classes</a></li>
+                <li><a href="instructors.html"><i class="fas fa-user"></i> Instructors</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
     <section class="hero">
-        <h1>Learn Archery Safely and Confidently</h1>
-        <p>
-            Whether you are a beginner or an experienced archer, our training programs
-            are designed to help you improve your skills in a safe and supportive environment.
-        </p>
-        <h2>Precision. Focus. Confidence.</h2>
-        <p>
-            Join Straight to the Point Archery and experience expert training
-            for beginners, intermediate learners, and advanced archers.
-        </p>
-        <a href="classes.html" class="btn">View Classes</a>
+        <div class="container">
+            <h1>Learn Archery Safely and Confidently</h1>
+            <h2>Precision. Focus. Confidence.</h2>
+            <p>
+                Whether you are a beginner or an experienced archer, our training
+                programs are designed to help you improve your skills in a safe,
+                supportive, and professional environment.
+            </p>
+            <a href="classes.html" class="btn">View Classes</a>
+        </div>
     </section>
 
-    <main>
+    <main class="container">
         <section class="safety">
-        <h2>Safety First</h2>
+            <h2>Safety First</h2>
             <p>
-                At Straight to the Point Archery, safety is our top priority. All
-                sessions are supervised by trained instructors, and students are guided
-                through proper handling of equipment and safety protocols at all times.
+                At Straight to the Point Archery, safety is our top priority.
+                All sessions are supervised by trained instructors, and students
+                are guided through proper equipment handling and safety protocols
+                at all times.
             </p>
         </section>
+
         <section class="welcome">
             <h2>Welcome to Straight to the Point Archery</h2>
             <p>
                 We provide quality archery instruction in a safe, supportive,
                 and professional environment. Whether you are just starting or
-                looking to improve your skills, our programs are designed to help
-                you succeed.
+                looking to improve your skills, our programs are designed to
+                help you succeed.
             </p>
         </section>
 
         <section class="programs">
             <h2>Our Programs</h2>
 
-            <article>
-                <h3>Beginner Classes</h3>
-                <p>
-                    Learn the fundamentals of archery, including proper stance,
-                    aiming, and safety practices.
-                </p>
-            </article>
+            <article class="program-card">
+    <h3><i class="fas fa-seedling"></i> Beginner Classes</h3>
+    <p>Learn the fundamentals of archery...</p>
+</article>
 
-            <article>
-                <h3>Intermediate Training</h3>
-                <p>
-                    Build consistency, improve technique, and strengthen your
-                    confidence with guided practice.
-                </p>
-            </article>
+<article class="program-card">
+    <h3><i class="fas fa-chart-line"></i> Intermediate Training</h3>
+    <p>Build consistency and improve technique...</p>
+</article>
 
-            <article>
-                <h3>Advanced Coaching</h3>
-                <p>
-                    Refine your precision and prepare for competitive archery
-                    with advanced instruction.
-                </p>
-            </article>
+<article class="program-card">
+    <h3><i class="fas fa-trophy"></i> Advanced Coaching</h3>
+    <p>Prepare for competitive archery...</p>
+</article>
         </section>
 
         <section class="why-us">
@@ -106,6 +119,10 @@
     </main>
 
     <footer>
+         <figure>
+        <img src="images/footer-bg.jpg" alt="Straight to the Point Archery logo">
+        <figcaption>Train with precision and confidence</figcaption>
+    </figure>
         <p>&copy; 2026 Straight to the Point Archery. All rights reserved.</p>
     </footer>
 
