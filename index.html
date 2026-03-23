@@ -1,175 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Straight to the Point Archery</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight to the Point Archery</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+    });
+</script>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container header-container">
+    <header>
+    <div class="header-container">
+        <div class="logo">
+           <figure>
+                    <img src="images/logo.png" alt="Straight to the Point Archery logo">
+                    <figcaption>Official logo of Straight to the Point Archery</figcaption>
+            </figure>
+        </div>
 
-      <!-- LOGO -->
-      <div class="logo">
-        <img src="images/logo.png" alt="Straight to the Point Archery Logo" />
-        <span>Straight to the Point Archery</span>
-      </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
 
-      <!-- NAVIGATION -->
-      <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#classes">Classes</a></li>
-          <li><a href="#lessons">Lessons</a></li>
-          <li><a href="#instructors">Instructors</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="classes.html"><i class="fas fa-bullseye"></i> Classes</a></li>
+                <li><a href="instructors.html"><i class="fas fa-user"></i> Instructors</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Master the Art of Archery</h1>
-      <p>
-        Join Straight to the Point Archery and learn essential skills from beginner
-        to advanced levels with certified instructors.
-      </p>
-      <a href="#classes" class="btn">Get Started</a>
-    </div>
-  </section>
-
-  <!-- MAIN CONTENT -->
-  <main>
-
-    <!-- CLASSES -->
-    <section id="classes" class="section">
-      <div class="container">
-        <h2>Our Classes</h2>
-        <p>Choose the right level and start your archery journey today.</p>
-
-        <div class="card-container">
-          <article class="card">
-            <h3>A101 Basic Archery</h3>
-            <p>Learn beginner safety, skills, and drills.</p>
-            <p><strong>Schedule:</strong> Mon & Wed (4–5 PM)</p>
-            <p><strong>Cost:</strong> $120/month</p>
-          </article>
-
-          <article class="card">
-            <h3>A102 Intermediate Archery</h3>
-            <p>Develop your form and practice with new equipment.</p>
-            <p><strong>Schedule:</strong> Tue & Thu (4–5 PM)</p>
-            <p><strong>Cost:</strong> $120/month</p>
-          </article>
-
-          <article class="card">
-            <h3>A103 Advanced Archery</h3>
-            <p>Prepare for tournament-style shooting.</p>
-            <p><strong>Schedule:</strong> Tue & Thu (5–6 PM)</p>
-            <p><strong>Cost:</strong> $120/month</p>
-          </article>
+    <section class="hero">
+        <div class="container">
+            <h1>Learn Archery Safely and Confidently</h1>
+            <h2>Precision. Focus. Confidence.</h2>
+            <p>
+                Whether you are a beginner or an experienced archer, our training
+                programs are designed to help you improve your skills in a safe,
+                supportive, and professional environment.
+            </p>
+            <a href="classes.html" class="btn">View Classes</a>
         </div>
-      </div>
     </section>
 
-    <!-- PRIVATE LESSONS -->
-    <section id="lessons" class="section">
-      <div class="container">
-        <h2>Private Lessons</h2>
-        <p>Get personalized coaching to improve your skills faster.</p>
+    <main class="container">
+        <section class="safety">
+            <h2>Safety First</h2>
+            <p>
+                At Straight to the Point Archery, safety is our top priority.
+                All sessions are supervised by trained instructors, and students
+                are guided through proper equipment handling and safety protocols
+                at all times.
+            </p>
+        </section>
 
-        <div class="card-container">
-          <article class="card">
-            <h3>Single Lesson</h3>
-            <p>1 hour expert coaching session.</p>
-            <p><strong>Price:</strong> $50</p>
-          </article>
+        <section class="welcome">
+            <h2>Welcome to Straight to the Point Archery</h2>
+            <p>
+                We provide quality archery instruction in a safe, supportive,
+                and professional environment. Whether you are just starting or
+                looking to improve your skills, our programs are designed to
+                help you succeed.
+            </p>
+        </section>
 
-          <article class="card">
-            <h3>3 Lesson Package</h3>
-            <p>3 sessions for consistent improvement.</p>
-            <p><strong>Price:</strong> $140</p>
-          </article>
+        <section class="programs">
+            <h2>Our Programs</h2>
 
-          <article class="card">
-            <h3>10 Lesson Package</h3>
-            <p>Long-term training for serious learners.</p>
-            <p><strong>Price:</strong> $380</p>
-          </article>
-        </div>
-      </div>
-    </section>
+            <article class="program-card">
+    <h3><i class="fas fa-seedling"></i> Beginner Classes</h3>
+    <p>Learn the fundamentals of archery...</p>
+</article>
 
-    <!-- INSTRUCTORS -->
-    <section id="instructors" class="section">
-      <div class="container">
-        <h2>Our Instructors</h2>
+<article class="program-card">
+    <h3><i class="fas fa-chart-line"></i> Intermediate Training</h3>
+    <p>Build consistency and improve technique...</p>
+</article>
 
-        <div class="card-container">
-          <article class="card">
-            <h3>Derek Jenkins</h3>
-            <p>Experienced outdoorsman and archery instructor.</p>
-          </article>
+<article class="program-card">
+    <h3><i class="fas fa-trophy"></i> Advanced Coaching</h3>
+    <p>Prepare for competitive archery...</p>
+</article>
+        </section>
 
-          <article class="card">
-            <h3>Amy Smith</h3>
-            <p>Passionate coach focused on safety and performance.</p>
-          </article>
+        <section class="why-us">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Certified and experienced instructors</li>
+                <li>Programs for all skill levels</li>
+                <li>Safe and well-maintained facilities</li>
+                <li>Supportive learning environment</li>
+            </ul>
+        </section>
 
-          <article class="card">
-            <h3>Nathan Lee</h3>
-            <p>Certified Level 3 coach with years of experience.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+        <section class="get-started">
+            <h2>Get Started Today</h2>
+            <p>
+                Explore our classes and meet our instructors to find the right
+                training program for you.
+            </p>
+            <a href="instructors.html" class="btn">Meet Our Instructors</a>
+        </section>
+    </main>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Us</h2>
-        <div class="info-box">
-          <p>
-            Straight to the Point Archery is a non-profit archery education center
-            offering training for all skill levels in a safe and supportive environment.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <div class="info-box">
-          <p><strong>Email:</strong> archery-education@example.com</p>
-          <p><strong>Phone:</strong> (253) 555-1010</p>
-          <p><strong>Address:</strong> 528 Nock Point Ln</p>
-
-          <button id="contactBtn">Click Me</button>
-          <p id="message"></p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Straight to the Point Archery</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+         <figure>
+        <img src="images/footer-bg.jpg" alt="Straight to the Point Archery logo">
+        <figcaption>Train with precision and confidence</figcaption>
+    </figure>
+        <p>&copy; 2026 Straight to the Point Archery. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
